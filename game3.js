@@ -74,7 +74,7 @@ function handleGuess(event) {
     }
 }
 
-/** Handles the winning condition for Game 3 and links to Game 4. */
+/** Handles the winning condition for Game 3 and links to Game 4. (UPDATED LINK) */
 function handleWin() {
     messageElement.textContent = "🎉 MISSION COMPLETE! Unlock Game 4: Sequence Satellite Stream!";
     
@@ -83,8 +83,8 @@ function handleWin() {
     nextGameButton.textContent = "Continue to Game 4 >>";
     nextGameButton.style.cssText = "padding: 15px 30px; font-size: 2em; background-color: #008080; color: white; border: none; border-radius: 10px; cursor: pointer; box-shadow: 0 5px 0 0 #005f5f;";
     
-    // Links to Game 4! (Assumed to be in the same repository for now)
-    nextGameButton.onclick = () => window.location.href = 'game4.html';
+    // CRITICAL CHANGE: Linking to the external URL for Game 4!
+    nextGameButton.onclick = () => window.open('https://ealimon.github.io/Satellite-Stream/', '_self');
     
     planetContainer.appendChild(nextGameButton);
 }
